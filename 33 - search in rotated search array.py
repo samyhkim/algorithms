@@ -1,5 +1,6 @@
 '''
-sorted, so can use binary searcch
+sorted, so can use binary search
+We check the sorted side in each iteration.
 
 No rotated:
 1 2 3 4 5 6 7

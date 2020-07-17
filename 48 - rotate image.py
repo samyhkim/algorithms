@@ -4,6 +4,10 @@ def rotate(matrix):
     '''
     # same as matrix.reverse()
     n = len(matrix)
+
+    # floor division handles odd and even matrix rows
+    # even rows: rows/2 number of swaps
+    # odd rows: rows/2 - 1 number of swaps
     for i in range(n // 2):
         matrix[i], matrix[(n-1)-i] = matrix[(n-1)-i], matrix[i]
 

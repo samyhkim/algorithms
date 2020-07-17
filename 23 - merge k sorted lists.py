@@ -8,7 +8,7 @@ class Node:
         self.next = None
 
 
-# modified merge sort
+# modified merge sort - O(nlogk), O(1)
 def merge_k_lists(lists):
     if not lists:
         return
@@ -34,7 +34,7 @@ def merge(l, r):
     return dummy.next
 
 
-# heap
+# heap - O(nlogk), O(n)
 # def merge_k_lists(lists):
 #     min_heap = [(head.val, i, head) for i, head in enumerate(lists) if head]
 #     dummy = Node(0)

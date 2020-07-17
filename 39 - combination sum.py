@@ -16,6 +16,7 @@ def dfs(nums, target, combinations, path, nums_idx):
         if target < nums[i]:
             break
 
+        # i prevents infinite loop
         # i does not change so we can try every element from the beginning of nums with each dfs path
         # candidates = [2, 3], target = 6; path = [2, 2, 2]
         dfs(nums, target - nums[i], combinations, path + [nums[i]], i)

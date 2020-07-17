@@ -19,7 +19,7 @@ def is_valid(s):
                 return False
 
     # will catch lone opening paren, like s="["
-    return len(open_parens) == 0
+    return open_parens == 0
 
 
 print(is_valid("()"))
